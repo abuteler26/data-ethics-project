@@ -2,62 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Survey & Visualizations</title>
+  <title>Survey & Visualizations – Data Ethics Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-title">Data Ethics – Volatility & Information Access</div>
-    <nav>
-      <a href="index.html">Abstract</a>
-      <a href="survey.html" class="active">Survey & Visualizations</a>
-      <a href="institutional.html">Order Flow / Institutional Data</a>
-      <a href="scenario-model.xlsx">Scenario Model (Excel)</a>
-    </nav>
-  </header>
+  <div class="page">
+    <header class="nav">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-title">Data Ethics ’96 – Volatility & Information Access</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Abstract</a>
+        <a href="survey.html" class="nav-link active">Survey & Visualizations</a>
+        <a href="institutional.html" class="nav-link">Order Flow / Institutional Data</a>
+        <a href="scenario-model.xlsx" class="nav-link" target="_blank">Scenario Model (Excel)</a>
+      </nav>
+    </header>
 
-  <main class="content">
-    <h1>Survey Experiment: Retail vs Institutional Information</h1>
+    <main class="content">
+      <section class="hero-card">
+        <p class="eyebrow">Survey Component</p>
+        <h1 class="hero-title">Survey Results & Behavioral Patterns</h1>
+        <p class="hero-subtitle">
+          Replace this paragraph with your description of the survey design, sample (UChicago students),
+          and key descriptive patterns from your visualizations (year group, majors, platforms, loss
+          aversion, etc.).
+        </p>
 
-    <section>
-      <h2>Design</h2>
-      <p>
-        Trade X is designed to mimic the information environment of a typical
-        retail investor (delayed quotes, less granular data). Trade Y gives the
-        same participants richer, almost real-time information, approximating an
-        institutional setting. For each trade, respondents report:
-      </p>
-      <ul>
-        <li>Expected 1-week return for the company</li>
-        <li>Confidence in their decision (0–10)</li>
-        <li>Fraction of a \$10,000 account they would allocate</li>
-        <li>Loss amount that would make them equally unhappy as a \$100 gain</li>
-        <li>Perceived fairness of their information access (1–7)</li>
-      </ul>
-    </section>
+        <!-- Here you can paste images of your Python plots or add more sections -->
+      </section>
+    </main>
 
-    <section>
-      <h2>Key Visualizations</h2>
-
-      <h3>Sample: Year Group & Investing Experience</h3>
-      <p>(Insert PNGs of your plots here using &lt;img&gt; tags.)</p>
-      <!-- Example: -->
-      <!-- <img src="img/year_group_distribution.png" alt="Year group distribution" class="plot" /> -->
-
-      <h3>Trade X vs Trade Y: Expected Returns & Confidence</h3>
-      <!-- Add images for histograms / KDE + bubble charts -->
-      <!-- <img src="img/tradeX_expected_return.png" class="plot" alt="Trade X expected return" /> -->
-
-      <h3>Loss Aversion & Fairness Perceptions</h3>
-      <!-- Add images for loss aversion histogram and fairness KDE overlay -->
-
-      <p class="note">
-        Note: Because our sample size is small (~21 respondents), results are
-        exploratory rather than statistically definitive. We use t-tests and
-        simple regressions only as suggestive evidence.
-      </p>
-    </section>
-
-  </main>
+    <footer class="footer">
+      <span>DATA 25900 · Survey Component</span>
+      <span class="dot">•</span>
+      <span>Retail-like vs. Institutional-like information</span>
+    </footer>
+  </div>
 </body>
 </html>
