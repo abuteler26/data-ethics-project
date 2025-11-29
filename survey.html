@@ -1,169 +1,63 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey & Visualizations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-title">Data Ethics – Volatility & Information Access</div>
+    <nav>
+      <a href="index.html">Abstract</a>
+      <a href="survey.html" class="active">Survey & Visualizations</a>
+      <a href="institutional.html">Order Flow / Institutional Data</a>
+      <a href="scenario-model.xlsx">Scenario Model (Excel)</a>
+    </nav>
+  </header>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-  <meta charset="UTF-8">\
-  <title>Survey Analysis \'96 Data Access & Volatility</title>\
-  <link rel="stylesheet" href="style.css">\
-</head>\
-<body>\
-  <header class="navbar">\
-    <div class="brand">Data Ethics \'96 Survey Analysis</div>\
-    <nav class="nav-links">\
-      <a href="index.html">Home</a>\
-      <a href="survey.html">Survey Analysis</a>\
-      <a href="institutional.html">Order Flow / Institutional</a>\
-      <a href="models/scenario_model.xlsx">Scenario Model</a>\
-    </nav>\
-  </header>\
-\
-  <main class="container">\
-    <section class="card">\
-      <span class="badge">Survey Design</span>\
-      <h1>Retail vs. Institutional: Trade X and Trade Y</h1>\
-      <p>\
-        We fielded an online survey of UChicago students who actively invest or\
-        follow financial markets. Respondents answered demographic questions,\
-        reported their investing experience and platforms, and then faced\
-        two stylized trading scenarios:\
-      </p>\
-      <ul class="list">\
-        <li><strong>Trade X:</strong> Limited, delayed information \'96 designed to mimic a typical retail setup.</li>\
-        <li><strong>Trade Y:</strong> Rich, real-time information and analytics \'96 designed to mimic an institutional desk.</li>\
-      </ul>\
-      <p>\
-        For each trade, respondents reported:\
-      </p>\
-      <ul class="list">\
-        <li>Expected 1-week return (%)</li>\
-        <li>Self-reported confidence (0\'9610)</li>\
-        <li>Fraction of a \\$10,000 account allocated</li>\
-        <li>Perceived fairness of their information access (1\'967)</li>\
-      </ul>\
-    </section>\
-\
-    <section class="card">\
-      <h2>Who Answered the Survey?</h2>\
-      <div class="figure-grid">\
-        <div class="figure-card">\
-          <img src="img/year_group_distribution.png" alt="Year group distribution">\
-          <div class="figure-caption">\
-            Distribution of respondents by class year (Freshman 
-\f1 \uc0\u8594 
-\f0  Senior).\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/investing_experience.png" alt="Investing experience">\
-          <div class="figure-caption">\
-            Investing experience distribution (0 years 
-\f1 \uc0\u8594 
-\f0  5+ years).\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/majors.png" alt="Most common majors">\
-          <div class="figure-caption">\
-            Most common majors and minors among respondents.\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/platform_asset_usage.png" alt="Platforms and asset classes">\
-          <div class="figure-caption">\
-            Platforms used (e.g. Robinhood, Schwab) and asset classes traded.\
-          </div>\
-        </div>\
-      </div>\
-    </section>\
-\
-    <section class="card">\
-      <h2>How Does Better Data Access Change Behavior?</h2>\
-      <div class="figure-grid">\
-        <div class="figure-card">\
-          <img src="img/hist_tradeX_expected_return.png" alt="Trade X expected returns">\
-          <div class="figure-caption">\
-            Expected 1-week returns for Trade X (retail-style information).\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/hist_tradeY_expected_return.png" alt="Trade Y expected returns">\
-          <div class="figure-caption">\
-            Expected 1-week returns for Trade Y (institutional-style information).\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/bubble_tradeX_conf_vs_return.png" alt="Trade X confidence vs return">\
-          <div class="figure-caption">\
-            Confidence vs. expected return for Trade X\
-            (bubble size/color = number of overlapping respondents).\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/bubble_tradeY_conf_vs_return.png" alt="Trade Y confidence vs return">\
-          <div class="figure-caption">\
-            Same for Trade Y \'96 showing whether richer information leads to\
-            higher confidence or more conservative expectations.\
-          </div>\
-        </div>\
-      </div>\
-\
-      <p>\
-        Paired t-tests compare each respondent\'92s Trade X and Trade Y answers:\
-      </p>\
-      <ul class="list">\
-        <li><strong>Expected return:</strong> no statistically significant difference.</li>\
-        <li><strong>Confidence:</strong> significantly higher in Trade Y (p &lt; 0.05).</li>\
-        <li><strong>Allocation:</strong> no strong evidence of a systematic change.</li>\
-      </ul>\
-      <p>\
-        Interpretation: richer, institutional-style information made people feel\
-        <em>more confident</em>, but did not reliably move their expected returns.\
-        This suggests a risk that better tools amplify <em>perceived</em> edge\
-        more than <em>true</em> edge.\
-      </p>\
-    </section>\
-\
-    <section class="card">\
-      <h2>Fairness & Ethical Perceptions</h2>\
-      <div class="figure-grid">\
-        <div class="figure-card">\
-          <img src="img/fairness_X_hist.png" alt="Fairness Trade X">\
-          <div class="figure-caption">\
-            Perceived fairness of information access in Trade X.\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/fairness_Y_hist.png" alt="Fairness Trade Y">\
-          <div class="figure-caption">\
-            Perceived fairness in Trade Y.\
-          </div>\
-        </div>\
-        <div class="figure-card">\
-          <img src="img/fairness_kde_comparison.png" alt="KDE fairness comparison">\
-          <div class="figure-caption">\
-            KDE comparison: fairness scores shift upward in Trade Y,\
-            especially for respondents most uncomfortable with delayed quotes.\
-          </div>\
-        </div>\
-      </div>\
-\
-      <p>\
-        A simple regression of the change in fairness perception\
-        (<code>fairness_Y \uc0\u8722  fairness_X</code>) on discomfort with delays,\
-        number of finance courses, and loss aversion suggests that\
-        discomfort with information lags is the main driver of perceived\
-        unfairness. This supports the ethical concern that structural\
-        data delays put retail investors at a disadvantage that they\
-        themselves recognize.\
-      </p>\
-    </section>\
-  </main>\
-</body>\
-</html>\
-}
+  <main class="content">
+    <h1>Survey Experiment: Retail vs Institutional Information</h1>
+
+    <section>
+      <h2>Design</h2>
+      <p>
+        Trade X is designed to mimic the information environment of a typical
+        retail investor (delayed quotes, less granular data). Trade Y gives the
+        same participants richer, almost real-time information, approximating an
+        institutional setting. For each trade, respondents report:
+      </p>
+      <ul>
+        <li>Expected 1-week return for the company</li>
+        <li>Confidence in their decision (0–10)</li>
+        <li>Fraction of a \$10,000 account they would allocate</li>
+        <li>Loss amount that would make them equally unhappy as a \$100 gain</li>
+        <li>Perceived fairness of their information access (1–7)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Visualizations</h2>
+
+      <h3>Sample: Year Group & Investing Experience</h3>
+      <p>(Insert PNGs of your plots here using &lt;img&gt; tags.)</p>
+      <!-- Example: -->
+      <!-- <img src="img/year_group_distribution.png" alt="Year group distribution" class="plot" /> -->
+
+      <h3>Trade X vs Trade Y: Expected Returns & Confidence</h3>
+      <!-- Add images for histograms / KDE + bubble charts -->
+      <!-- <img src="img/tradeX_expected_return.png" class="plot" alt="Trade X expected return" /> -->
+
+      <h3>Loss Aversion & Fairness Perceptions</h3>
+      <!-- Add images for loss aversion histogram and fairness KDE overlay -->
+
+      <p class="note">
+        Note: Because our sample size is small (~21 respondents), results are
+        exploratory rather than statistically definitive. We use t-tests and
+        simple regressions only as suggestive evidence.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
