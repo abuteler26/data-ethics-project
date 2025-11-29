@@ -381,3 +381,8 @@ body {
   opacity: 0.85;
 }
 
+.viz-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
