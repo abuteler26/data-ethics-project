@@ -2,148 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Data Ethics – Volatility & Information Access</title>
+  <title>Institutional / Order-Flow Analysis – Data Ethics Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
-  <!-- Optional prettier font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page">
-    <!-- Top nav -->
+    <!-- Top Navigation -->
     <header class="nav">
       <div class="nav-left">
         <span class="logo-dot"></span>
-        <span class="nav-title">Data Ethics 25900 – Instituion vs Retail Investor Information Access</span>
+        <span class="nav-title">Data Ethics ’96 – Volatility & Information Access</span>
       </div>
       <nav class="nav-links">
-        <a href="index.html" class="nav-link active">Abstract</a>
+        <a href="index.html" class="nav-link">Abstract</a>
         <a href="survey.html" class="nav-link">Survey & Visualizations</a>
-        <a href="institutional.html" class="nav-link">Order Flow / Institutional Data</a>
-        <!-- Update the Excel file name below to whatever you upload -->
+        <a href="institutional.html" class="nav-link active">Order Flow / Institutional Data</a>
         <a href="scenario-model.xlsx" class="nav-link" target="_blank">Scenario Model (Excel)</a>
       </nav>
     </header>
 
-    <!-- Main hero / abstract card -->
+    <!-- Main content -->
     <main class="content">
       <section class="hero-card">
-        <p class="eyebrow">Project Abstract</p>
-        <h1 class="hero-title">
-          How Data Accessibility Shapes Retail vs. Institutional Investors
-        </h1>
+        <p class="eyebrow">Institutional Component</p>
+        <h1 class="hero-title">Historical Order-Flow & Institutional Comparison</h1>
         <p class="hero-subtitle">
-          We study how differences in <span class="highlight">information access</span> affect
-          decision-making, perceived fairness, and outcomes during high-volatility events.
+          This section summarizes the empirical analysis based on the <strong>historical Robinhood order-flow dataset (2018–2020)</strong> conducted by my project partner.
+          It provides real-world evidence of how retail investors behaved around major volatility spikes and compares this with institutional-level information access.
         </p>
 
-        <!-- Top two-column layout: left = research question, right = evidence -->
-        <div class="summary-grid">
-          <!-- LEFT: main research question bubble -->
-          <div class="summary-left">
-            <div class="rq-bubble rq-main-bubble">
-              <h3>Research Question</h3>
-              <p>
-                “How does unequal access to real-time, high-quality data affect retail vs. institutional investors’
-                decision-making and performance during volatility spikes, and what ethical concerns arise for fairness,
-                responsibility, and transparency in financial markets?”
-              </p>
-            </div>
+        <div class="layout-two">
+          <div class="text-block">
+            <h2 class="section-heading">Data & Methodology</h2>
+            <p>
+              The dataset captures trading volumes, timing, and behavioral shifts across key events such as:
+            </p>
+            <ul class="nice-list">
+              <li>⚠️ The 2018 VIX spike</li>
+              <li>📉 COVID-19 market crash (Q1 2020)</li>
+              <li>🔥 Meme stock episodes (GME, AMC)</li>
+            </ul>
+            <p>
+              The analysis investigates whether limited access to real-time financial data caused retail investors to <em>react slower, take on excessive risk, or chase momentum</em>
+              relative to institutional activity.
+            </p>
           </div>
 
-          <!-- RIGHT: Our Evidence pill card -->
-          <div class="summary-right">
-            <div class="pill-card">
-              <h2 class="section-heading">Our Evidence</h2>
-              <ul class="nice-list">
-                <li>
-                  <span class="badge badge-retail">Trade X – Retail-like</span>
-                  <br />
-                  A modern <strong>survey experiment</strong> where UChicago students make
-                  hypothetical trading decisions under limited / delayed information, mimicking a
-                  retail setting with 15-minute quote delays and less data.
-                </li>
-                <li>
-                  <span class="badge badge-inst">Trade Y – Institutional-like</span>
-                  <br />
-                  The same survey investors, but now with <strong>richer, real-time
-                  information</strong>, approximating institutional data access.
-                </li>
-                <li>
-                  <span class="badge badge-history">Historical Check</span>
-                  <br />
-                  A historical <strong>Robinhood order-flow dataset</strong> (2018–2020) that shows
-                  how retail investors actually behaved around episodes of extreme volatility.
-                </li>
-              </ul>
-            </div>
+          <div class="pill-card">
+            <h2 class="section-heading">Key Insights</h2>
+            <ul class="nice-list">
+              <li>
+                <span class="badge badge-history">Empirical Evidence</span><br>
+                Retail order-flow showed strong sensitivity to price momentum, often reacting <strong>after</strong) major institutional moves.
+              </li>
+              <li>
+                <span class="badge badge-inst">Institutional Advantage</span><br>
+                High-frequency and deeper data access allowed institutional investors to <strong>position ahead</strong> of volatile swings.
+              </li>
+              <li>
+                <span class="badge badge-retail">Survey Link</span><br>
+                The behavioral patterns seen in the dataset mirror the tendencies observed in <strong>Trade X survey responses</strong>.
+              </li>
+            </ul>
           </div>
         </div>
 
-        <!-- Full-width bubbles below both columns -->
-        <div class="rq-bubbles" style="margin-top: 2rem;">
-          <!-- Why we care -->
-          <div class="rq-bubble">
-            <h3>Why We Care</h3>
-            <p>
-              During volatility spikes, retail investors often trade on delayed quotes, fragmented news, or social media,
-              while institutional investors rely on real-time order books, analytics, and execution algorithms. That gap in
-              information access may turn “the market” into an uneven playing field, where some traders systematically face
-              worse prices, more risk, or higher behavioral biases. Understanding this gap matters for
-              <strong>fairness</strong> (who bears the risk), <strong>responsibility</strong> (how platforms design data access),
-              and <strong>transparency</strong> (whether investors understand the limits of the information they see).
-            </p>
-          </div>
-
-          <!-- What we build on -->
-          <div class="rq-bubble">
-            <h3>What We Build On</h3>
-            <p>
-              Prior research in behavioral finance shows that retail investors trade more pro-cyclically, chase momentum,
-              and underperform after costs relative to institutions. Work on payment-for-order-flow and zero-commission
-              platforms raises additional concerns about execution quality and hidden costs. However, fewer studies directly
-              compare <em>perceived fairness, confidence, and expectations</em> across different information environments.
-              Our project fills that gap by pairing a modern survey experiment with historical order-flow data.
-            </p>
-          </div>
-
-          <!-- What we do -->
-          <div class="rq-bubble">
-            <h3>What We Do</h3>
-            <p>
-              We ask UChicago students to make two hypothetical trades under a “retail-like” delayed-data setting (Trade X)
-              and an “institutional-like” richer-data setting (Trade Y). We measure expected returns, confidence, allocation
-              size, risk attitudes, and fairness perceptions. We then connect these patterns to a real Robinhood order-flow
-              dataset to see whether the behaviors we observe in the lab align with how retail traders actually behaved in
-              2018–2020 during volatility events.
-            </p>
-          </div>
-        </div>
-
-        <!-- CTA buttons -->
         <div class="cta-area">
-          <h2 class="section-heading">Explore the Project</h2>
+          <h2 class="section-heading">Continue Exploring</h2>
           <div class="cta-buttons">
-            <a href="survey.html" class="btn primary">Explore the Survey Results</a>
-            <a href="institutional.html" class="btn secondary">
-              See the Institutional / Order-Flow Analysis
-            </a>
-            <a href="scenario-model.xlsx" class="btn ghost" target="_blank">
-              Download the Scenario Model (Excel)
-            </a>
+            <a href="survey.html" class="btn primary">View the Survey Analysis</a>
+            <a href="scenario-model.xlsx" class="btn secondary" target="_blank">Download the Scenario Model</a>
+            <a href="index.html" class="btn ghost">Return to Abstract</a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <span>DATA 25900</span>
-      <span class="dot">•</span>
-      <span>University of Chicago</span>
-      <span class="dot">•</span>
-      <span>Agustin Buteler & Mateo Rampoldi</span>
+      <span>DATA 25900 · Institutional Analysis</span>
       <span class="dot">•</span>
       <span>Retail vs. Institutional Information Access</span>
     </footer>
