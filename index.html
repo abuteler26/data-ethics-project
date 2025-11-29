@@ -16,13 +16,12 @@
     <header class="nav">
       <div class="nav-left">
         <span class="logo-dot"></span>
-        <span class="nav-title">Data Ethics ’96 – Volatility & Information Access</span>
+        <span class="nav-title">Data Ethics 25900 – Institutional vs Retail Investor Information Access</span>
       </div>
       <nav class="nav-links">
         <a href="index.html" class="nav-link active">Abstract</a>
         <a href="survey.html" class="nav-link">Survey & Visualizations</a>
         <a href="institutional.html" class="nav-link">Order Flow / Institutional Data</a>
-        <!-- Update the Excel file name below to whatever you upload -->
         <a href="scenario-model.xlsx" class="nav-link" target="_blank">Scenario Model (Excel)</a>
       </nav>
     </header>
@@ -39,46 +38,92 @@
           decision-making, perceived fairness, and outcomes during high-volatility events.
         </p>
 
+        <!-- Two-column row: green question on the left, evidence card on the right -->
         <div class="layout-two">
+          <!-- LEFT: main research question bubble -->
           <div class="text-block">
             <h2 class="section-heading">Research Question</h2>
-            <p>
-              Ultimately, we ask:
-            </p>
+            <p>Ultimately, we ask:</p>
             <p class="question">
-              “How does unequal access to real-time, high-quality data affect retail vs.
-              institutional investors’ decision-making and performance during volatility spikes,
-              and what ethical concerns arise for fairness, responsibility, and transparency in
-              financial markets?”
+              “How does unequal access to real-time, high-quality data affect retail vs. institutional
+              investors’ decision-making and performance during volatility spikes, and what ethical
+              concerns arise for fairness, responsibility, and transparency in financial markets?”
             </p>
           </div>
 
+          <!-- RIGHT: evidence / blue bubble -->
           <div class="pill-card">
             <h2 class="section-heading">Our Evidence</h2>
             <ul class="nice-list">
               <li>
-                <span class="badge badge-retail">Trade X – Retail-like</span>
-                <br />
+                <span class="badge badge-retail">Trade X – Retail-like</span><br />
                 A modern <strong>survey experiment</strong> where UChicago students make
                 hypothetical trading decisions under limited / delayed information, mimicking a
                 retail setting with 15-minute quote delays and less data.
               </li>
               <li>
-                <span class="badge badge-inst">Trade Y – Institutional-like</span>
-                <br />
-                The same survey investors, but now with <strong>richer, real-time
-                information</strong>, approximating institutional data access.
+                <span class="badge badge-inst">Trade Y – Institutional-like</span><br />
+                The same survey investors, but now with
+                <strong>richer, real-time information</strong>, approximating institutional data access.
               </li>
               <li>
-                <span class="badge badge-history">Historical Check</span>
-                <br />
+                <span class="badge badge-history">Historical Check</span><br />
                 A historical <strong>Robinhood order-flow dataset</strong> (2018–2020) that shows
                 how retail investors actually behaved around episodes of extreme volatility.
               </li>
             </ul>
           </div>
-        </div>
+        </div><!-- /layout-two -->
 
+        <!-- BELOW BOTH COLUMNS: extra green bubbles, full-width -->
+        <section class="rq-extra">
+          <h2 class="section-heading">Why This Project Matters</h2>
+          <div class="rq-stack">
+            <p class="question">
+              <strong>Why We Care.</strong>
+              During volatility spikes, retail investors often trade on delayed quotes, fragmented
+              news, or social media, while institutional investors rely on real-time order books,
+              analytics, and execution algorithms. That information gap can create an uneven
+              playing field where some traders systematically face worse prices, more risk, or
+              stronger behavioral biases. Understanding this gap matters for
+              <strong> fairness</strong> (who bears the risk),
+              <strong> responsibility</strong> (how platforms design access to data),
+              and <strong>transparency</strong> (whether investors understand the limits of what
+              they see).
+            </p>
+
+            <p class="question">
+              <strong>What We Build On.</strong>
+              Prior research in behavioral finance shows that retail investors trade more
+              pro-cyclically, chase momentum, and underperform after costs relative to
+              institutions. Work on payment-for-order-flow and zero-commission trading raises
+              questions about execution quality and hidden costs. However, fewer studies directly
+              compare <em>perceived fairness, confidence, and expectations</em> across different
+              information environments during high-volatility events.
+            </p>
+
+            <p class="question">
+              <strong>What We Do.</strong>
+              We ask UChicago students to make two hypothetical trades: a “retail-like” delayed-data
+              setting (Trade X) and an “institutional-like” richer-data setting (Trade Y). We
+              measure expected returns, confidence, allocation size, risk attitudes, and fairness
+              perceptions. We then connect these patterns to a real Robinhood order-flow dataset to
+              see whether the behaviors we observe in the lab line up with how retail traders
+              actually behaved in 2018–2020 during volatility spikes.
+            </p>
+
+            <p class="question">
+              <strong>Limitations & Next Steps.</strong>
+              Our survey investors are students making hypothetical choices, not real-money trades,
+              and our institutional benchmark is a richer-data treatment rather than true
+              institutional access. Future work could extend this design to professional traders,
+              incorporate actual financial incentives, and test alternative information regimes
+              (e.g., fee-based “premium” data vs. equal-access public feeds).
+            </p>
+          </div>
+        </section>
+
+        <!-- Call-to-action buttons -->
         <div class="cta-area">
           <h2 class="section-heading">Explore the Project</h2>
           <div class="cta-buttons">
@@ -95,7 +140,11 @@
     </main>
 
     <footer class="footer">
-      <span>DATA 25900 · University of Chicago</span>
+      <span>DATA 25900</span>
+      <span class="dot">•</span>
+      <span>University of Chicago</span>
+      <span class="dot">•</span>
+      <span>Agustin Buteler & Mateo Rampoldi</span>
       <span class="dot">•</span>
       <span>Retail vs. Institutional Information Access</span>
     </footer>
