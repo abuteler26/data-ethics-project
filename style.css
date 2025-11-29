@@ -24,6 +24,30 @@ body {
   flex-direction: column;
 }
 
+/* ===================== */
+/* Research Bubble Styling */
+/* ===================== */
+
+.rq-bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space between bubbles */
+}
+
+.rq-bubble {
+  background: rgba(21, 94, 67, 0.18); /* greenish transparent background */
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  border-radius: 18px;
+  padding: 1.1rem 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.rq-main-bubble {
+  background: rgba(21, 128, 61, 0.25); /* slightly darker green for the main one */
+}
+
+
 /* Top nav */
 
 .nav {
