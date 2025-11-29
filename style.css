@@ -345,3 +345,8 @@ body {
     align-items: stretch;
   }
 }
+
+.question-main {
+  margin-bottom: 24px;
+}
+
