@@ -2,39 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Order Flow / Institutional Data</title>
+  <title>Institutional / Order-Flow Analysis – Data Ethics Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav-title">Data Ethics – Volatility & Information Access</div>
-    <nav>
-      <a href="index.html">Abstract</a>
-      <a href="survey.html">Survey & Visualizations</a>
-      <a href="institutional.html" class="active">Order Flow / Institutional Data</a>
-      <a href="scenario-model.xlsx">Scenario Model (Excel)</a>
-    </nav>
-  </header>
+  <div class="page">
+    <!-- Top Navigation -->
+    <header class="nav">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-title">Data Ethics ’96 – Volatility & Information Access</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Abstract</a>
+        <a href="survey.html" class="nav-link">Survey & Visualizations</a>
+        <a href="institutional.html" class="nav-link active">Order Flow / Institutional Data</a>
+        <a href="scenario-model.xlsx" class="nav-link" target="_blank">Scenario Model (Excel)</a>
+      </nav>
+    </header>
 
-  <main class="content">
-    <h1>Order Flow & Institutional Comparison</h1>
+    <!-- Main content -->
+    <main class="content">
+      <section class="hero-card">
+        <p class="eyebrow">Institutional Component</p>
+        <h1 class="hero-title">Historical Order-Flow & Institutional Comparison</h1>
+        <p class="hero-subtitle">
+          This section summarizes the empirical analysis based on the <strong>historical Robinhood order-flow dataset (2018–2020)</strong> conducted by my project partner.
+          It provides real-world evidence of how retail investors behaved around major volatility spikes and compares this with institutional-level information access.
+        </p>
 
-    <section>
-      <h2>Robinhood Order-Flow Data (2018–2020)</h2>
-      <p>
-        Here you describe what your partner did: data source, sample period,
-        how volatility events are identified, and how retail flows respond.
-      </p>
-    </section>
-
-    <section>
-      <h2>Link to Survey Results</h2>
-      <p>
-        Briefly explain how patterns in actual retail trading (e.g. chasing
-        volatility, panic selling, concentration risk) line up with what we see
-        in the survey (confidence, loss aversion, fairness perceptions).
-      </p>
-    </section>
-  </main>
-</body>
-</html>
+        <div class="layout-two">
+          <div class="text-block">
+            <h2 class="section-heading">Data & Methodology</h2>
+            <p>
+              The dataset captures trading volumes, timing, and behavioral shifts across key events such as:
+            </p>
+            <ul class="nice-list">
+              <li>⚠️ The 2018 VIX spike</li>
+              <li>📉 COVID-19 market crash (Q1 2020)</li>
+              <li>🔥 Meme stock episodes (GME, AMC)</li>
+            </ul>
+            <p>
+              The analysis investigates whether limited access to real-time financial data caused retail in
