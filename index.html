@@ -2,65 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Data Ethics: Retail vs Institutional Investors</title>
+  <title>Data Ethics – Volatility & Information Access</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Optional prettier font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Top navigation -->
-  <header class="navbar">
-    <div class="nav-title">Data Ethics – Volatility & Information Access</div>
-    <nav>
-      <a href="index.html">Abstract</a>
-      <a href="survey.html">Survey & Visualizations</a>
-      <a href="institutional.html">Order Flow / Institutional Data</a>
-      <a href="scenario-model.xlsx">Scenario Model (Excel)</a>
-      <!-- update href when your file name is different -->
-    </nav>
-  </header>
+  <div class="page">
+    <!-- Top nav -->
+    <header class="nav">
+      <div class="nav-left">
+        <span class="logo-dot"></span>
+        <span class="nav-title">Data Ethics ’96 – Volatility & Information Access</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Abstract</a>
+        <a href="survey.html" class="nav-link">Survey & Visualizations</a>
+        <a href="institutional.html" class="nav-link">Order Flow / Institutional Data</a>
+        <!-- Update the Excel file name below to whatever you upload -->
+        <a href="scenario-model.xlsx" class="nav-link" target="_blank">Scenario Model (Excel)</a>
+      </nav>
+    </header>
 
-  <main class="content">
-    <h1>How Data Accessibility Shapes Retail vs. Institutional Investors</h1>
+    <!-- Main hero / abstract card -->
+    <main class="content">
+      <section class="hero-card">
+        <p class="eyebrow">Project Abstract</p>
+        <h1 class="hero-title">
+          How Data Accessibility Shapes Retail vs. Institutional Investors
+        </h1>
+        <p class="hero-subtitle">
+          We study how differences in <span class="highlight">information access</span> affect
+          decision-making, perceived fairness, and outcomes during high-volatility events.
+        </p>
 
-    <section>
-      <h2>Project Abstract</h2>
-      <p>
-        We study how differences in information access affect decision-making,
-        perceived fairness, and outcomes during high-volatility events.
-      </p>
-      <p>
-        Our project combines two sources of evidence:
-      </p>
-      <ul>
-        <li>
-          <strong>A modern survey experiment</strong> where UChicago students make
-          hypothetical trading decisions under two information environments:
-          a <em>retail-like setting</em> (Trade X) with delayed / limited data, and
-          an <em>institutional-like setting</em> (Trade Y) with richer, real-time information.
-        </li>
-        <li>
-          <strong>A historical Robinhood order-flow dataset</strong> that captures
-          how actual retail investors behaved around extreme volatility between 2018–2020.
-        </li>
-      </ul>
-      <p>
-        Ultimately, we ask:
-        <em>
-          “How does unequal access to real-time, high-quality data affect
-          retail vs. institutional investors’ decision-making and performance
-          during volatility spikes, and what ethical concerns arise for fairness,
-          responsibility, and transparency in financial markets?”
-        </em>
-      </p>
-    </section>
+        <div class="layout-two">
+          <div class="text-block">
+            <h2 class="section-heading">Research Question</h2>
+            <p>
+              Ultimately, we ask:
+            </p>
+            <p class="question">
+              “How does unequal access to real-time, high-quality data affect retail vs.
+              institutional investors’ decision-making and performance during volatility spikes,
+              and what ethical concerns arise for fairness, responsibility, and transparency in
+              financial markets?”
+            </p>
+          </div>
 
-    <section class="cta-box">
-      <h3>Explore the Project</h3>
-      <p>
-        → <a href="survey.html">Explore the Survey Results</a><br />
-        → <a href="institutional.html">See the Institutional / Order-Flow Analysis</a><br />
-        → <a href="scenario-model.xlsx">Download the Scenario Model (Excel)</a>
-      </p>
-    </section>
-  </main>
+          <div class="pill-card">
+            <h2 class="section-heading">Our Evidence</h2>
+            <ul class="nice-list">
+              <li>
+                <span class="badge badge-retail">Trade X – Retail-like</span>
+                <br />
+                A modern <strong>survey experiment</strong> where UChicago students make
+                hypothetical trading decisions under limited / delayed information, mimicking a
+                retail setting with 15-minute quote delays and less data.
+              </li>
+              <li>
+                <span class="badge badge-inst">Trade Y – Institutional-like</span>
+                <br />
+                The same survey investors, but now with <strong>richer, real-time
+                information</strong>, approximating institutional data access.
+              </li>
+              <li>
+                <span class="badge badge-history">Historical Check</span>
+                <br />
+                A historical <strong>Robinhood order-flow dataset</strong> (2018–2020) that shows
+                how retail investors actually behaved around episodes of extreme volatility.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cta-area">
+          <h2 class="section-heading">Explore the Project</h2>
+          <div class="cta-buttons">
+            <a href="survey.html" class="btn primary">Explore the Survey Results</a>
+            <a href="institutional.html" class="btn secondary">
+              See the Institutional / Order-Flow Analysis
+            </a>
+            <a href="scenario-model.xlsx" class="btn ghost" target="_blank">
+              Download the Scenario Model (Excel)
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>DATA 25900 · University of Chicago</span>
+      <span class="dot">•</span>
+      <span>Retail vs. Institutional Information Access</span>
+    </footer>
+  </div>
 </body>
 </html>
