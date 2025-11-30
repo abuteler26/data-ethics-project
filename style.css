@@ -381,3 +381,8 @@ body {
   border-radius: 8px;
   display: block;
 }
+
+/* Make a visualization block span across all columns */
+.viz-block-wide {
+    grid-column: 1 / -1;  /* spans entire width of the grid */
+}
