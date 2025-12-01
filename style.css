@@ -162,9 +162,9 @@ body {
 
 .layout-two {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 32px;
-  margin-bottom: 28px;
+  align-items: flex-start; /* prevents vertical stretching */
 }
 
 .section-heading {
