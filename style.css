@@ -404,3 +404,10 @@ body {
     margin-bottom: 8px;
 }
 
+.method-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #d6d6d6; /* match your site’s light text */
+}
+
