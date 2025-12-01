@@ -381,3 +381,26 @@ body {
   border-radius: 8px;
   display: block;
 }
+
+.method-section {
+    margin-top: 18px;
+    color: #e6e6e6;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.method-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.method-list {
+    margin-left: 20px;
+}
+
+.method-list li {
+    margin-bottom: 8px;
+}
+
