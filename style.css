@@ -416,3 +416,13 @@ body {
   grid-column: 1 / -1;   /* spans across both columns */
   margin-top: 24px;
 }
+
+
+/* One-column institutional visual section */
+.inst-viz-section {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
