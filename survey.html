@@ -349,12 +349,54 @@
                  alt="OLS regression of change in confidence on information and experience variables"
                  style="max-width: 100%; border-radius: 12px; display: block; margin: 0 auto;">
             <figcaption style="margin-top: 8px; font-size: 0.85rem; color: #9ca3af;">
-              OLS regression results: change in confidence (Trade Y − Trade X) explained by
+              Model 1: OLS regression results: change in confidence (Trade Y − Trade X) explained by
               comfort with delayed quotes, use of news/Twitter, and number of finance courses.
             </figcaption>
           </figure>
-        
         </div>
+
+          <div class="analysis-text-block" style="
+            margin-top: 32px;
+            background: rgba(15, 23, 42, 0.95);
+            padding: 28px 32px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35), 0 0 1px rgba(148,163,184,0.25);
+        ">
+        
+          <h2 style="margin-top: 0; color: #ffffff; font-size: 1.35rem;">
+            Do Investors Become More Optimistic With Better Information?
+          </h2>
+            <br></br>
+        
+          <p style="color: #d1d5db; line-height: 1.6;">
+          After measuring the effect of institutional-style access (Trade Y) on confidence, we ran a second model to answer a deeper question: 
+          <strong>does better information actually make investors more optimistic about returns?</strong> 
+          To explore this, we created a variable capturing the change in expected returns 
+          <code>(Trade&nbsp;Y expected return – Trade&nbsp;X expected return)</code> 
+          and regressed it on several investor characteristics, including risk aversion, number of finance courses completed, comfort with delayed quotes, and reliance on social-based information sources such as friends or Discord. The goal was to test whether any particular subgroup becomes systematically more bullish when given richer information.
+          </p>
+          
+          <p style="color: #d1d5db; line-height: 1.6; margin-top: 16px;">
+          The regression results show that this model explains very little of the variation in return differences <em>(R² ≈ 0.13)</em>, and 
+          <strong>none of the predictors are statistically significant</strong>. 
+          Risk attitudes, education, social information sources, and comfort with delayed quotes all have imprecise estimates with large p-values. In practical terms, this means that institutional-style access does <strong>not</strong> make any particular type of investor more optimistic. Instead, expected returns remain remarkably stable across environments.  
+          <br><br>
+          This supports an important conclusion: 
+          <strong>institutional information increases confidence, not optimism.</strong>  
+          Investors feel more certain—but not more bullish—when given richer, more professional-style information.
+          </p>
+        
+          <figure style="margin: 24px 0 0; text-align: center;">
+            <!-- Replace the src below with the filename of your regression table image -->
+            <img src="model-2.png"
+                 alt="OLS regression of change in confidence on information and experience variables"
+                 style="max-width: 100%; border-radius: 12px; display: block; margin: 0 auto;">
+            <figcaption style="margin-top: 8px; font-size: 0.85rem; color: #9ca3af;">
+              XXXXXXXXXXX
+            </figcaption>
+          </figure>
+        </div>
+          
         </section>
 
         <div class="cta-area">
