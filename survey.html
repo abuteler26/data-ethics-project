@@ -277,6 +277,7 @@
             <h2 style="margin-top: 0; color: #ffffff; font-size: 1.35rem;">
                 Correlations & Tests
             </h2>
+            <br></br>
         
             <p style="color: #d1d5db; line-height: 1.6;">
                 To deepen the survey analysis, we examined correlations between expected returns,
@@ -302,9 +303,57 @@
                 unrealistic optimism. In short, better information improves <strong>calibration</strong>, not
                 overconfidence.
             </p>
-        
         </div>
 
+          <div class="analysis-text-block" style="
+            margin-top: 32px;
+            background: rgba(15, 23, 42, 0.95);
+            padding: 28px 32px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35), 0 0 1px rgba(148,163,184,0.25);
+        ">
+        
+          <h2 style="margin-top: 0; color: #ffffff; font-size: 1.35rem;">
+            Who Benefits Most from Better Information?
+          </h2>
+        
+          <p style="color: #d1d5db; line-height: 1.6;">
+            After showing that institutional-style access (Trade Y) raises confidence relative to the
+            retail-style environment (Trade X), we ran a regression to ask a second question:
+            <strong>who</strong> experiences the biggest confidence boost? To study this, we used the
+            change in confidence <code>(Trade&nbsp;Y confidence − Trade&nbsp;X confidence)</code> as the
+            dependent variable and regressed it on investors’ comfort with delayed quotes,
+            their use of news sites and Twitter for market information, and the number of
+            finance courses they have taken. The idea was to test whether investors who rely
+            more on fast, real-time data or who have more formal training benefit differently
+            from richer information.
+          </p>
+        
+          <p style="color: #d1d5db; line-height: 1.6; margin-top: 16px;">
+            With our small sample, the model explains only a modest share of the variation
+            in confidence changes (R² ≈ 0.24), and <strong>none of the individual predictors are
+            statistically significant at conventional levels</strong>. The coefficient on comfort with
+            delayed quotes is positive and borderline significant, while news, Twitter use,
+            and number of finance courses are all imprecisely estimated with large
+            p-values. In practice, this means we do not find strong evidence that any
+            particular subgroup of investors drives the confidence gains. Instead, the
+            improvement in confidence from Trade X to Trade Y appears to be
+            <strong>broad-based</strong>, rather than concentrated among only highly informed,
+            highly online, or highly educated investors.
+          </p>
+        
+          <figure style="margin: 24px 0 0; text-align: center;">
+            <!-- Replace the src below with the filename of your regression table image -->
+            <img src="confidence_regression_table.png"
+                 alt="OLS regression of change in confidence on information and experience variables"
+                 style="max-width: 100%; border-radius: 12px; display: block; margin: 0 auto;">
+            <figcaption style="margin-top: 8px; font-size: 0.85rem; color: #9ca3af;">
+              OLS regression results: change in confidence (Trade Y − Trade X) explained by
+              comfort with delayed quotes, use of news/Twitter, and number of finance courses.
+            </figcaption>
+          </figure>
+        
+        </div>
         </section>
 
         <div class="cta-area">
