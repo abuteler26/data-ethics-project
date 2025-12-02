@@ -161,6 +161,88 @@
         </div>
       </section>
 
+        <section class="takeaways-section">
+          <h2 class="section-heading">Order-Flow & Retail Activity: Key Takeaways</h2>
+        
+          <div class="takeaway-grid">
+            <!-- 13F Holdings -->
+            <article class="takeaway-card">
+              <h3>13F Holdings Data</h3>
+              <ul>
+                <li>
+                  Percent change in holdings from quarter to quarter is not dramatic, 
+                  but it is more pronounced than the change in the number of 
+                  Robinhood users. This suggests institutional investors may be 
+                  actively tweaking positions to capture smaller fluctuations.
+                </li>
+                <li>
+                  Absolute changes in holdings show far fewer extreme jumps than we 
+                  see in the Robinhood user counts.
+                </li>
+              </ul>
+            </article>
+        
+            <!-- Robinhood -->
+            <article class="takeaway-card">
+              <h3>Robinhood Data</h3>
+              <ul>
+                <li>
+                  Looking at absolute QoQ changes, most stocks move together: after 
+                  2019Q4, almost all names see a sharp increase in users, which could 
+                  reflect herd-like behavior or simply Robinhood’s growing popularity.
+                </li>
+                <li>
+                  Percent changes are much sharper and more stock-specific, suggesting 
+                  that retail investors are more “emotional” or reactive, while 
+                  institutions adjust more gradually.
+                </li>
+              </ul>
+            </article>
+        
+            <!-- Overlaid with VIX -->
+            <article class="takeaway-card">
+              <h3>Overlaid with VIX</h3>
+              <ul>
+                <li>
+                  Institutional investors react much less to spikes in volatility 
+                  (the 13F curve is relatively flat), while Robinhood participation 
+                  surges during the pandemic VIX spike.
+                </li>
+                <li>
+                  Interpreting this as “beta to the VIX”: institutional flows behave 
+                  like low-beta exposure (&lt; 0.5), whereas Robinhood flows look 
+                  high-beta, with aggressive buying during high-volatility episodes.
+                </li>
+              </ul>
+            </article>
+        
+            <!-- Normalized 13F vs RH users -->
+            <article class="takeaway-card">
+              <h3>Normalized 13F Value vs Robinhood Users</h3>
+              <ul>
+                <li>
+                  For most stocks, normalized 13F value and Robinhood users move 
+                  together, but we see notable exceptions (e.g., AMCX, XOM, BRK.B, 
+                  MSFT, BA, F). These divergences may signal information gaps or 
+                  asymmetric information across investor types.
+                </li>
+              </ul>
+            </article>
+          </div>
+        
+          <!-- Important note in red bubble -->
+          <article class="takeaway-card takeaway-alert">
+            <h3>Important Note About the Data</h3>
+            <p>
+              13F filings report the <strong>value</strong> of institutional holdings, 
+              while the Robinhood data captures the <strong>number of users</strong> 
+              holding a stock — they are not directly comparable. To make the series 
+              comparable in scale, we normalized the values (except in charts that 
+              explicitly show absolute quarter-over-quarter changes).
+            </p>
+          </article>
+        </section>
+
 
 
         <div class="cta-area">
